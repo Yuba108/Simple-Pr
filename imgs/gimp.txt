@@ -1,0 +1,22 @@
+MAKE CIRCULAR IMAGE IN GIMP :
+
+- Add Alpha Channel
+- Go to Layer > Transparency > Add Alpha Channel.
+- This allows transparency. If it's grayed out, it's already added—great!
+- Select the Circular Area
+- Use the Ellipse Select Tool (E key).
+- Drag to select the circular part you want to keep.
+- Hold Shift for a perfect circle.
+- Invert the Selection
+- Go to Select > Invert to select everything outside the circle.
+- Delete the Background
+- Press Delete on your keyboard.
+- You should now see a checkerboard pattern around the circle—that means transparency.
+- Crop to Content
+- Go to Image > Crop to Content to remove excess transparent space.
+- Export as PNG
+- Go to File > Export As.
+- Choose .png format (JPEG doesn’t support transparency).
+- In the export dialog:
+- Make sure “Save color values from transparent pixels” is unchecked.
+- Click Export.

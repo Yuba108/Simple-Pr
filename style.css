@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: var(--lightColor);
+}
+:root {
+  --primaryColor: #6453c4;
+  --lightColor: gold;
+  --darkColor: rgb(152, 138, 63);
+  --card: #715bbe;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primaryColor);
+  height: 9vh;
+  border-bottom: 1px solid var(--darkColor);
+}
+
+/* nav bhitra ko sab ul lai target greko => 1 ul here */
+nav ul {
+  width: 40%;
+  /* border-radius: 20px; */
+  margin-right: 20px;
+  /* background-color: wheat; */
+  display: flex;
+  justify-content: space-evenly;
+}
+/* nav bhitra ko ul ko bhitra ko li ko sab <a> lai target greko ani on hover*/
+nav ul li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--darkColor);
+}
+
+nav ul li {
+  color: var(--lightColor);
+}
+
+nav h1 {
+  font-size: 3rem;
+  color: var(--lightColor);
+  padding-left: 1rem;
+}
+
+nav h1 span {
+  font-size: 3rem;
+  color: var(--darkColor);
+}
+
+.hero {
+  height: 91vh;
+  /* background-color: green; */
+  display: flex;
+  background-color: var(--primaryColor);
+}
+
+.hero .left {
+  height: 100%;
+  width: 50%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  line-height: 3rem;
+}
+
+.hero .right {
+  height: 100%;
+  width: 50%;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left p {
+  color: var(--lightColor);
+}
+
+.left h1 {
+  font-size: 2rem;
+}
+
+/* socialMedai class bhitra ko img jati sab lai target greko */
+.socialMedia img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 10px;
+}
+
+.socialMedia {
+  /* border: 2px solid black; */
+  width: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.socialMedia:hover {
+  cursor: pointer;
+}
+
+.socialMediaNames {
+  /* border: 2px solid black; */
+  width: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -1.5rem;
+}
+
+.socialMediaNames p a {
+  font-size: 0.4rem;
+}
+
+.hero .right img {
+  height: 80%;
+  width: 60%;
+  border-radius: 50% 20% / 10% 40%;
+}
+.before {
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  color: var(--lightColor);
+  text-decoration: underline;
+}
+
+.services {
+  padding: 1rem;
+  height: 100vh;
+  /* background-color: rgb(48, 96, 94); */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.services div img {
+  height: 30%; /* 60% of parent => div */
+  width: 50%; /* 80% of parent => div */
+  border-radius: 20px;
+}
+
+.services div {
+  border: 2px solid black;
+  border-radius: 50px 50px 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1rem;
+  background-color: var(--card);
+  color: white;
+}
+
+.services div h2 {
+  color: var(--lightColor);
+}
+
+.services div p {
+  font-size: 0.8rem;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  padding: 2px;
+}
+
+.services div:hover {
+  background-color: var(--primaryColor);
+  transition: background-color 0.6s ease-in-out; /* smooth transition effect on hover :smooth change of color on hover*/
+}
+
+#projects {
+  height: 100%;
+  width: 100%;
+  padding: 0 3rem;
+  /* background-color: rgb(48, 96, 94); */
+  /* border: 5px dotted black; */
+}
+
+#contact {
+  height: 100vh;
+  width: 100%;
+  padding: 3rem;
+  /* background-color: red; */
+  display: flex;
+}
+
+.contactL {
+  height: 100%;
+  width: 25%;
+  /* background-color: blue; */
+  /* border: 2px solid blue; */
+}
+.contactR {
+  height: 100%;
+  width: 75%;
+  background-color: rgb(227, 226, 226);
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactForm {
+  max-width: 40rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#contact label {
+  display: block;
+  font-size: medium;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+/* input ra textarea lai target greko : multiple selection */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 3px;
+}
+
+button {
+  background-color: var(--card);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(183, 178, 178);
+  transition: background-color 0.4s ease-in-out; /* smooth transition effect on hover :smooth change of color on hover*/
+}
+
+.contactL {
+  background-color: rgb(227, 226, 226);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
